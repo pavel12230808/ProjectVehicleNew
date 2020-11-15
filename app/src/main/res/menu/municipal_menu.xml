@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/myprofile"
+        android:icon="@drawable/ic_user"
+        android:title="My Profile" />
+
+    <item
+        android:id="@+id/check_no_plate"
+        android:icon="@drawable/ic_check_np"
+        android:title="Check Number Plate" />
+
+
+    <item
+        android:id="@+id/logout"
+        android:icon="@drawable/ic_logout"
+        android:title="Logout" />
+</menu>

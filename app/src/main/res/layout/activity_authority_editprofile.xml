@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="#FFFFFF"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:text="Name"
+            android:textSize="16dp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="left"
+            android:layout_marginLeft="30dp"
+            android:textColor="#111111"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <EditText
+            android:id="@+id/et_name"
+            android:hint=""
+            android:singleLine="true"
+            android:padding="9dp"
+            android:background="@drawable/edittext_reg_fields"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+
+
+        <TextView
+            android:id="@+id/tv_emailid"
+            android:text="EmailID"
+            android:textSize="16dp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="left"
+            android:layout_marginLeft="30dp"
+            android:textColor="#111111"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <EditText
+            android:id="@+id/et_emailid"
+            android:hint=""
+            android:editable="false"
+            android:singleLine="true"
+            android:padding="9dp"
+            android:background="@drawable/edittext_reg_fields"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:id="@+id/tv_GENDER"
+            android:text="Gender"
+            android:visibility="gone"
+            android:textSize="16dp"
+            android:textColor="#111111"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RadioGroup
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioGroup"
+            android:visibility="gone"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioMale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male"
+                android:layout_weight="1"
+                android:checked="true" />
+
+            <RadioButton
+                android:id="@+id/radioFemale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Female"
+                android:checked="false" />
+
+        </RadioGroup>
+
+
+
+        <TextView
+            android:id="@+id/tv_phno"
+            android:text="Phoneno"
+            android:textSize="16dp"
+            android:inputType="phone"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="left"
+            android:layout_marginLeft="30dp"
+            android:textColor="#111111"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <EditText
+            android:id="@+id/et_phone_no"
+            android:hint="Phoneno"
+            android:singleLine="true"
+            android:padding="9dp"
+            android:background="@drawable/edittext_reg_fields"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_username"
+            android:text="User Name"
+            android:textSize="16dp"
+            android:visibility="gone"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="left"
+            android:layout_marginLeft="30dp"
+            android:textColor="#111111"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <EditText
+            android:id="@+id/et_uname"
+            android:hint=""
+            android:visibility="gone"
+            android:singleLine="true"
+            android:padding="9dp"
+            android:background="@drawable/edittext_reg_fields"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_pwd"
+            android:text="Password"
+            android:textSize="16dp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="left"
+            android:layout_marginLeft="30dp"
+            android:textColor="#111111"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <EditText
+            android:id="@+id/et_password"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:padding="9dp"
+            android:background="@drawable/edittext_reg_fields"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+           android:id="@+id/btnupdade"
+            android:text="Update"
+            android:padding="18dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="70dp"
+            android:layout_marginRight="70dp"
+            android:background="@drawable/button1_rounded"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+</ScrollView>

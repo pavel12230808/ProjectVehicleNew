@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:background="#efefef"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <ImageView
+        android:layout_marginTop="10dp"
+        android:src="@drawable/bgg"
+        android:layout_gravity="center"
+        android:scaleType="fitXY"
+        android:layout_marginBottom="25dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp" />
+
+
+
+    <androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        card_view:cardBackgroundColor="#fbfafb"
+        card_view:cardCornerRadius="15dp"
+        card_view:cardElevation="2dp"
+        card_view:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_margin="8dp"
+            android:orientation="vertical"
+            android:background="#f7f7f7"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+
+        <EditText
+            android:id="@+id/et_uname"
+            android:hint="Email"
+            android:drawableEnd="@drawable/ic_username"
+            android:paddingLeft="20dp"
+            android:singleLine="true"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+
+            <EditText
+                android:id="@+id/et_password"
+                android:singleLine="true"
+                android:drawableEnd="@drawable/ic_pwd"
+                android:hint="Password"
+                android:paddingLeft="20dp"
+                android:inputType="textPassword"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="Select Role"
+                android:textSize="16dp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="left"
+                android:layout_marginLeft="30dp"
+                android:layout_marginBottom="5dp"
+                android:textColor="#000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Spinner
+                android:id="@+id/spin_user_municipal"
+                android:singleLine="true"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/login"
+                android:scrollbars="none"
+                android:spinnerMode="dropdown"/>
+
+            <Button
+                android:id="@+id/bt_login"
+                android:text="Login"
+                android:padding="18dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="80dp"
+                android:layout_marginRight="80dp"
+                android:background="@drawable/button1_rounded"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:textAllCaps="false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_newuser"
+                    android:text="New User "
+                    android:textColor="#96B0BF"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+                <TextView
+                    android:id="@+id/tv_reg_here"
+                    android:text="Register Here"
+                    android:layout_marginLeft="6dp"
+                    android:textColor="#48A848"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_forget_pass"
+                android:text="ForgotPassword"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="15dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/bt_guest"
+            android:text="Guest"
+            android:padding="18dp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_70sdp"
+            android:layout_marginRight="@dimen/_70sdp"
+            android:background="@drawable/button1_rounded"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_43sdp"/>
+
+    </LinearLayout>
+
+</ScrollView>

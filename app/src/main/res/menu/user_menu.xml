@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/myprofile"
+        android:icon="@drawable/ic_person_pin_24"
+        android:tint="#4cab84"
+        android:title="My Profile"/>
+
+    <item android:id="@+id/mycar"
+        android:icon="@drawable/ic_baseline_directions_car_24"
+        android:tint="#4cab84"
+        android:title="Add Car Details"/>
+
+    <item android:id="@+id/view_personal"
+        android:icon="@drawable/ic_password_eye_24"
+        android:tint="#4cab84"
+        android:title="Change Password"/>
+
+    <item android:id="@+id/view_balance"
+        android:icon="@drawable/ic_paid_fine"
+        android:tint="#4cab84"
+        android:visible="false"
+        android:title="Account Balance"/>
+
+        <item android:id="@+id/view_terms"
+           android:visible="false"
+
+            android:title="Terms"/>
+
+        <item android:id="@+id/search_challana"
+            android:visible="false"
+        android:icon="@drawable/ic_search_24"
+            android:tint="#4cab84"
+        android:title="Search"/>
+
+    <item android:id="@+id/scane_num_plate"
+        android:visible="false"
+        android:icon="@drawable/ic_search"
+        android:title="Scan Number Plate"/>
+
+    <item android:id="@+id/logout"
+        android:icon="@drawable/ic_logout"
+        android:title="Logout"/>
+</menu>

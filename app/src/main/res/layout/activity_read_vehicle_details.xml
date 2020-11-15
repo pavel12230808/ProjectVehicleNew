@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="#FFFFFF"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select Type"
+
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <RadioGroup
+                android:id="@+id/radioType"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                 >
+
+                <RadioButton
+                    android:id="@+id/rbManual"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="Manual Process"
+
+                    android:textSize="25dp" />
+
+                <RadioButton
+                    android:id="@+id/rbScan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="Scan Process"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:textSize="25dp" />
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tv_vehicle_num"
+            android:text="Vehicle Number"
+            android:textSize="16dp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="left"
+            android:layout_marginLeft="30dp"
+            android:textColor="#111111"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <EditText
+            android:id="@+id/et_vehicle_num"
+            android:hint="Vehicle Number"
+            android:singleLine="true"
+            android:padding="9dp"
+            android:background="@drawable/edittext_reg_fields"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <Button
+            android:id="@+id/bt_scan"
+            android:text="Scan Number Plate"
+            android:paddingLeft="@dimen/_80sdp"
+            android:paddingRight="@dimen/_80sdp"
+            android:visibility="gone"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:background="@drawable/button1_rounded"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+        <Button
+            android:id="@+id/bt_check"
+            android:text="Check"
+            android:paddingLeft="@dimen/_80sdp"
+            android:paddingRight="@dimen/_80sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:background="@drawable/button1_rounded"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/bt_upload"
+            android:text="upload"
+            android:paddingLeft="@dimen/_80sdp"
+            android:paddingRight="@dimen/_80sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:background="@drawable/button1_rounded"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tv_time"
+            android:textSize="16dp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_gravity="left"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:textColor="#111111"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:text="Make"
+            android:textSize="16dp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_gravity="left"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:textColor="#111111"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+
+
+        <EditText
+            android:id="@+id/et_make"
+            android:hint="Car Make"
+            android:singleLine="true"
+            android:padding="@dimen/_8sdp"
+            android:background="@drawable/edit_text_rounded"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="Model"
+            android:textSize="16dp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_gravity="left"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:textColor="#111111"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <EditText
+            android:id="@+id/et_model"
+            android:hint="Car Model"
+            android:singleLine="true"
+            android:padding="@dimen/_8sdp"
+            android:background="@drawable/edit_text_rounded"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="Color"
+            android:textSize="16dp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_gravity="left"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:textColor="#111111"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <EditText
+            android:id="@+id/et_color"
+            android:hint="Car Color"
+            android:singleLine="true"
+            android:padding="@dimen/_8sdp"
+            android:background="@drawable/edit_text_rounded"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:text="Title"
+            android:textSize="16dp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="left"
+            android:layout_marginLeft="30dp"
+            android:textColor="#111111"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <EditText
+            android:id="@+id/et_title"
+            android:hint="Title"
+            android:singleLine="true"
+            android:padding="9dp"
+            android:background="@drawable/edittext_reg_fields"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_desc"
+            android:text="Description"
+            android:textSize="16dp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="left"
+            android:layout_marginLeft="30dp"
+            android:textColor="#111111"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <EditText
+            android:id="@+id/et_description"
+            android:hint="Description"
+            android:singleLine="true"
+            android:padding="9dp"
+            android:background="@drawable/edittext_reg_fields"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_fee"
+            android:text="Fee"
+            android:textSize="16dp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="left"
+            android:layout_marginLeft="30dp"
+            android:textColor="#111111"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <EditText
+            android:id="@+id/et_fee"
+            android:hint="Fee"
+            android:singleLine="true"
+            android:padding="9dp"
+            android:background="@drawable/edittext_reg_fields"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+
+        <Spinner
+            android:id="@+id/spin_station_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_reg_fields"
+            android:textColorHint="#B68E9C"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:padding="@dimen/_7sdp"
+            android:popupBackground="@android:color/white"
+            android:scrollbars="none"
+            android:spinnerMode="dropdown" />
+
+
+        <Button
+            android:id="@+id/btn_season_img"
+            android:text="Upload Photo"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:textAllCaps="false"
+            android:layout_gravity="center"
+            android:textColor="#ffffff"
+            android:layout_width="@dimen/_125sdp"
+            android:layout_height="@dimen/_33sdp"
+            android:background="@drawable/button1_rounded" />
+
+        <Button
+            android:id="@+id/bt_submit"
+            android:text="Submit"
+            android:paddingLeft="@dimen/_80sdp"
+            android:paddingRight="@dimen/_80sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:background="@drawable/button1_rounded"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,119 @@
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_6sdp"
+    card_view:cardCornerRadius="@dimen/_4sdp"
+    card_view:cardElevation="@dimen/_3sdp"
+    card_view:cardUseCompatPadding="true">
+
+   <LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content">
+           <ImageView
+               android:id="@+id/img_profile"
+               android:src="@drawable/profile"
+               android:layout_width="100dp"
+               android:layout_height="100dp"/>
+
+       </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:textSize="@dimen/_14sdp"
+            android:layout_marginBottom="@dimen/_2sdp"
+            android:paddingLeft="@dimen/_8sdp"
+            android:fontFamily="sans-serif-black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/tv_emailid"
+            android:textSize="@dimen/_14sdp"
+            android:layout_marginBottom="@dimen/_2sdp"
+            android:paddingLeft="@dimen/_8sdp"
+            android:fontFamily="sans-serif-black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/tv_phno"
+            android:textSize="@dimen/_14sdp"
+            android:layout_marginBottom="@dimen/_2sdp"
+            android:paddingLeft="@dimen/_8sdp"
+            android:fontFamily="sans-serif-black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/tv_username"
+            android:textSize="@dimen/_14sdp"
+            android:visibility="gone"
+            android:layout_marginBottom="@dimen/_2sdp"
+            android:paddingLeft="@dimen/_8sdp"
+            android:fontFamily="sans-serif-black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/tv_pwd"
+            android:textSize="@dimen/_14sdp"
+            android:layout_marginBottom="@dimen/_2sdp"
+            android:paddingLeft="@dimen/_8sdp"
+            android:fontFamily="sans-serif-black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_edit"
+                android:layout_weight="1"
+                android:text="Edit"
+                android:gravity="center"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:background="@drawable/text_green"
+                android:layout_width="@dimen/_110sdp"
+                android:layout_height="@dimen/_33sdp"/>
+            <TextView
+                android:id="@+id/tv_delete"
+                android:layout_weight="1"
+                android:text="Delete"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:background="@drawable/text_rounded"
+                android:layout_width="@dimen/_110sdp"
+                android:layout_height="@dimen/_33sdp"/>
+
+    </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
+
+</androidx.cardview.widget.CardView>
+

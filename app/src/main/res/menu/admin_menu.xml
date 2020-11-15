@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/add_authority"
+        android:icon="@drawable/ic_add_auth"
+        android:title="Add Authorized" />
+
+    <item
+        android:id="@+id/authority_list"
+        android:icon="@drawable/ic_au_list"
+        android:title="Authorized User List" />
+
+
+    <item
+        android:id="@+id/logout"
+        android:icon="@drawable/ic_logout"
+        android:title="Logout" />
+</menu>

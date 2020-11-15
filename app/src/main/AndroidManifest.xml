@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.projectvehicle">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!-- Permissions -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!-- Google MAP API key -->
+    <meta-data
+        android:name="com.google.android.maps.v2.API_KEY"
+        android:value="AIzaSyBdP6YdH2Fwc1M-TOTiu6C4PaMO0EGVOqI" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@drawable/icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activities.kruthik">
+
+
+        </activity>
+        <activity android:name=".activities.MyFinesActivity" />
+        <activity android:name=".activities.AdminComplaintsActivity" />
+        <activity android:name=".activities.AdminVerifyActivity" />
+        <activity android:name=".activities.AddComplaintActivity" />
+        <activity android:name=".activities.MyCarsActivity" />
+        <activity android:name=".activities.AddMyCarActivity" />
+        <activity android:name=".activities.GetAllCarsActivity" />
+        <activity android:name=".activities.UserHomeActivity" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAgcPro55DtHD2NuDqPaELcihWP0jw8o2Y" />
+
+        <activity android:name=".activities.SlashScreenActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.LoginActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activities.EditYourProfileActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activities.RegistrationActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activities.MapActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activities.ChangePasswordActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activities.ReadVehicleDetailsActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activities.AddAuthorityActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activities.MunicipalHomeActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activities.AdminHomeActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activities.AdminEditProfileActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activities.MunicipalEditProfileActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activities.AuthorityListActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activities.EditAuthorityActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".NumberPlateRecActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activities.GetFineDetailsActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activities.PayFineActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activities.GetPendingFinesActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activities.GetPaidFinesActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activities.GetAllPaidFinesActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activities.GetAllPendingFinesActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activities.GuestActivty"
+            android:windowSoftInputMode="stateHidden" />
+
+        <service android:name=".fcm.FBMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <meta-data
+            android:name="com.google.mlkit.vision.DEPENDENCIES"
+            android:value="ocr" />
+        <meta-data
+            android:name="com.google.android.gms.vision.DEPENDENCIES"
+            android:value="ocr" />
+    </application>
+
+</manifest>

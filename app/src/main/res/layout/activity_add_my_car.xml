@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="Make"
+        android:textSize="16dp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_gravity="left"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:textColor="#111111"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <EditText
+        android:id="@+id/et_make"
+        android:hint="Car Make"
+        android:singleLine="true"
+        android:padding="@dimen/_8sdp"
+        android:background="@drawable/edit_text_rounded"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:text="Model"
+        android:textSize="16dp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_gravity="left"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:textColor="#111111"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <EditText
+        android:id="@+id/et_model"
+        android:hint="Car Model"
+        android:singleLine="true"
+        android:padding="@dimen/_8sdp"
+        android:background="@drawable/edit_text_rounded"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:text="Color"
+        android:textSize="16dp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_gravity="left"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:textColor="#111111"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <EditText
+        android:id="@+id/et_year"
+        android:hint="Car Color"
+        android:singleLine="true"
+        android:padding="@dimen/_8sdp"
+        android:background="@drawable/edit_text_rounded"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <TextView
+        android:text="Number Plate"
+        android:textSize="16dp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_gravity="left"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:textColor="#111111"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <EditText
+        android:id="@+id/et_numberplate"
+        android:hint="Number Plate"
+        android:singleLine="true"
+        android:padding="@dimen/_8sdp"
+        android:background="@drawable/edit_text_rounded"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btn_season_img"
+        android:text="Upload Photo"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:textAllCaps="false"
+        android:layout_gravity="center"
+        android:textColor="#ffffff"
+        android:layout_width="@dimen/_125sdp"
+        android:layout_height="@dimen/_33sdp"
+        android:background="@drawable/button1_rounded" />
+
+
+
+    <Button
+        android:id="@+id/btn_Submit"
+        android:text="Submit"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:textAllCaps="false"
+        android:textColor="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_38sdp"
+        android:background="@drawable/button1_rounded" />
+
+</LinearLayout>

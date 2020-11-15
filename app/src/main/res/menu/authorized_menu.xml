@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/myprofile"
+        android:icon="@drawable/ic_user"
+        android:title="My Profile"/>
+
+    <item android:id="@+id/view_personal"
+        android:icon="@drawable/ic_msg"
+        android:title="Change Password"/>
+
+    <item android:id="@+id/view_balance"
+        android:icon="@drawable/ic_viewjobs"
+        android:title="Account Balance"/>
+
+    <item android:id="@+id/view_terms"
+        android:visible="false"
+        android:icon="@drawable/ic_newjobs"
+        android:title="Terms"/>
+
+    <item android:id="@+id/search_challana"
+        android:icon="@drawable/ic_search"
+        android:title="Search"/>
+
+    <item android:id="@+id/scane_num_plate"
+        android:icon="@drawable/ic_search"
+        android:title="Scan Number Plate"/>
+
+    <item android:id="@+id/logout"
+        android:icon="@drawable/ic_logout"
+        android:title="Logout"/>
+</menu>

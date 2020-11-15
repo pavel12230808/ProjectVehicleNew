@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="#FFFFFF"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:text="Name"
+            android:textSize="16dp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="left"
+            android:layout_marginLeft="30dp"
+            android:textColor="#111111"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <EditText
+            android:id="@+id/et_name"
+            android:hint="Name"
+            android:singleLine="true"
+            android:padding="9dp"
+            android:background="@drawable/edittext_reg_fields"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+
+
+        <TextView
+            android:id="@+id/tv_emailid"
+            android:text="Email ID"
+            android:textSize="16dp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="left"
+            android:layout_marginLeft="30dp"
+            android:textColor="#111111"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <EditText
+            android:id="@+id/et_emailid"
+            android:hint="Email ID"
+            android:singleLine="true"
+            android:padding="9dp"
+            android:background="@drawable/edittext_reg_fields"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:id="@+id/tv_GENDER"
+            android:text="Gender"
+            android:visibility="gone"
+            android:textSize="16dp"
+            android:textColor="#111111"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RadioGroup
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioGroup"
+            android:visibility="gone"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioMale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male"
+                android:layout_weight="1"
+                android:checked="true" />
+
+            <RadioButton
+                android:id="@+id/radioFemale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Female"
+                android:checked="false" />
+
+        </RadioGroup>
+
+
+
+        <TextView
+            android:id="@+id/tv_phno"
+            android:text="Phone Number"
+            android:textSize="16dp"
+            android:inputType="phone"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="left"
+            android:layout_marginLeft="30dp"
+            android:textColor="#111111"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <EditText
+            android:id="@+id/et_phone_no"
+            android:hint="Phone"
+            android:inputType="number"
+            android:maxLength="12"
+            android:singleLine="true"
+            android:padding="9dp"
+            android:background="@drawable/edittext_reg_fields"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_username"
+            android:text="User Name"
+            android:visibility="gone"
+            android:textSize="16dp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="left"
+            android:layout_marginLeft="30dp"
+            android:textColor="#111111"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <EditText
+            android:id="@+id/et_uname"
+            android:hint="Enter Username"
+            android:visibility="gone"
+            android:singleLine="true"
+            android:padding="9dp"
+            android:background="@drawable/edittext_reg_fields"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_pwd"
+            android:text="Password"
+            android:textSize="16dp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="left"
+            android:layout_marginLeft="30dp"
+            android:textColor="#111111"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <EditText
+            android:id="@+id/et_password"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:padding="9dp"
+            android:background="@drawable/edittext_reg_fields"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btn_season_img"
+            android:text="Upload Photo"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:textAllCaps="false"
+            android:layout_gravity="center"
+            android:textColor="#ffffff"
+            android:layout_width="@dimen/_125sdp"
+            android:layout_height="@dimen/_33sdp"
+            android:background="@drawable/button1_rounded" />
+
+        <Button
+            android:id="@+id/bt_reg"
+            android:text="Register"
+            android:padding="18dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="70dp"
+            android:layout_marginRight="70dp"
+            android:background="@drawable/button1_rounded"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Smart Towing</string>
+    <string name="read_file">This app needs access to your file storage so that it can read photos.</string>
+    <string-array name="login">
+
+        <item>User</item>
+        <item>Authority</item>
+        <item>Admin</item>
+    </string-array>
+    <string name="Open">Open navigation drawer</string>
+    <string name="Close">Close navigation drawer</string>
+    <string name="title_activity_maps">Map</string>
+</resources>
